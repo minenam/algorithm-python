@@ -1,1 +1,15 @@
-# algorithm study (by. python)
+# Algorithm Study (Python)
+
+### 입문
+- **백준(bj) [단계별로 풀기](https://www.acmicpc.net/step)**
+    01. 입출력과 사칙계산
+    02. 조건문
+    03. 반복문
+    04. 1차원 배열
+    05. 함수
+    06. 문자열
+    07. 기본 수학 1
+    08. 기본 수학 2
+    09. 재귀
+    10. 브루트 포스
+    11. 정렬
