@@ -26,21 +26,14 @@ a,b,c = map(int, input().split())
 
 def dice(a,b,c):
     result = 0
-    if a == b:
-        if b != c:
-            result = 1000 + a * 100
-        else:
-            result = 10000 + a * 1000
-    elif a == c:
-        if c != b:
-            result = 1000 + a * 100
-        else:
-            result = 10000 + a * 1000
-    elif b == c:
-        if c != a:
-            result = 1000 + b * 100
-        else:
-            result = 10000 + a * 1000
+    if a == b == c:
+        result = 10000 + a * 1000
+    elif a == b and b != c:
+        result = 1000 + a * 100
+    elif a != b and b == c:
+        result = 1000 + b * 100
+    elif a == c and c != b:
+        result = 1000 + a * 100
     else:
         result = max(a,b,c)*100
     return result
