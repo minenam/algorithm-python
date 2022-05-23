@@ -27,15 +27,14 @@ def hanNum(N):
     if (N // 100) < 1:
         count = N
         return count
-    # N이 3자리 이상일 때, N이 'abc'로 구성되었다면 2b = a+b 공식을 적용
+    # N이 3자리 이상일 때, N이 'abc'로 구성되었다면 2b = a+c 공식을 적용
     else:
         for x in range(100, N+1):
             a = x // 100
             b = (x // 10) % 10
             c = x % 10
-            if 2*ten == hund + one:
+            if 2*b == a + c:
                 count += 1
         return count + 99
-
 
 print(hanNum(N))
